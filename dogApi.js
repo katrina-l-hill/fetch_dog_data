@@ -1,7 +1,7 @@
 // dogApi.js
 
 // Add your code here
-export async function fetchBreeds() {
+async function fetchBreeds() {
     try {
         const response = await fetch("https://dogapi.dog/api/v2/breeds");
         if (!response.ok) {
@@ -13,3 +13,4 @@ export async function fetchBreeds() {
         console.log(error.message);
     }
 }
+export {fetchBreeds};
