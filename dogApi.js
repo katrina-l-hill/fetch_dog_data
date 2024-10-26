@@ -2,9 +2,8 @@
 
 // Add your code here
 export async function fetchBreeds() {
-    const url = await fetch("https://dogapi.dog/api/v2/breeds");
     try {
-        const response = await fetch(url);
+        const response = await fetch("https://dogapi.dog/api/v2/breeds");
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
         }
