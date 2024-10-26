@@ -10,7 +10,7 @@ async function fetchBreeds() {
         const json = await response.json();
         console.log(json);
     } catch (error) {
-        console.log(error.message);
+        console.error("Failed to fetch dog breeds: ", error);
     }
 }
-export {fetchBreeds};
+export { fetchBreeds };
